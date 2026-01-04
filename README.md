@@ -1,8 +1,12 @@
 # Environmental Monitoring System Using Raspberry Pi 5
 
+![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)
+![Flask](https://img.shields.io/badge/Flask-2.0+-green.svg)
+![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi%205-red.svg)
+
 A real-time weather monitoring and visualization system built with Raspberry Pi 5, Python, and Flask.
 
-## 🌡️ Features
+## Features
 
 - **Live Weather Data Collection**: Fetches real-time weather data from OpenWeatherMap API
 - **Historical Data Logging**: Stores temperature, humidity, and wind speed in CSV format
@@ -10,7 +14,7 @@ A real-time weather monitoring and visualization system built with Raspberry Pi 
 - **Web Dashboard**: Flask-based web interface with auto-refresh for live monitoring
 - **SSH-Friendly**: Designed to run headless on Raspberry Pi via SSH
 
-## 📋 Components
+## Components
 
 - `collector.py` - Fetches weather data from OpenWeatherMap API
 - `analyzer.py` - Analyzes historical data and generates charts
@@ -18,7 +22,7 @@ A real-time weather monitoring and visualization system built with Raspberry Pi 
 - `run_all.sh` - Automation script to run the collection and analysis pipeline
 - `web_check.py` - Utility script to verify internet connectivity
 
-## 🚀 Setup
+## Setup
 
 ### Prerequisites
 
@@ -49,7 +53,7 @@ pip install requests pandas matplotlib flask
    - Edit `collector.py` and replace `API_KEY` with your OpenWeatherMap API key
    - Optionally, set your preferred city in `CITY_NAME`
 
-## 📊 Usage
+## Usage
 
 ### Manual Execution
 
@@ -87,7 +91,7 @@ Add this line:
 0 * * * * /home/YOUR_USERNAME/path/to/run_all.sh
 ```
 
-## 🌐 Dashboard Access
+## Dashboard Access
 
 Once the Flask server is running, access the dashboard from any device on your network:
 - From the Pi: `http://localhost:5000`
@@ -95,7 +99,7 @@ Once the Flask server is running, access the dashboard from any device on your n
 
 The dashboard auto-refreshes every 60 seconds.
 
-## 📝 Project Structure
+## Project Structure
 
 ```
 Environmental_Monitor_Pi5/
@@ -108,7 +112,7 @@ Environmental_Monitor_Pi5/
 └── temperature_chart.png # Generated chart (generated)
 ```
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Python 3** - Core programming language
 - **Requests** - HTTP library for API calls
@@ -117,7 +121,7 @@ Environmental_Monitor_Pi5/
 - **Flask** - Web framework for dashboard
 - **OpenWeatherMap API** - Weather data source
 
-## 📈 Future Enhancements
+## Future Enhancements
 
 - [ ] Add humidity and wind speed visualizations
 - [ ] Database integration (SQLite/PostgreSQL)
@@ -126,19 +130,22 @@ Environmental_Monitor_Pi5/
 - [ ] Historical data comparison
 - [ ] Docker containerization
 
-## 🔒 Security Note
+## Security Note
 
 **Never commit your API keys to version control!** Use environment variables or a `.env` file for sensitive data.
 
-## 📄 License
+## Author
 
-This project is open source and available for educational purposes.
+**Heshan Ranasinghe**  
+Electronic and Telecommunication Engineering Undergraduate
 
-## 👤 Author
+- Email: hranasinghe505@gmail.com
+- GitHub: [@DPHeshanRanasinghe](https://github.com/DPHeshanRanasinghe)
+- LinkedIn: [Heshan Ranasinghe](https://www.linkedin.com/in/heshan-ranasinghe-988b00290)
 
-Built with ❤️ on Raspberry Pi 5 via SSH
+Developed on Raspberry Pi 5 via SSH
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - OpenWeatherMap for providing free weather data API
 - Raspberry Pi Foundation for amazing hardware
